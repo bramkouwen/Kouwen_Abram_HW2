@@ -1,0 +1,23 @@
+//Main scss file that imports all partials into one main file.
+
+
+//utility
+@import 'modules/_breakpoints';
+@import 'modules/_variables';
+@import 'modules/_mixins';
+@import 'modules/_details';
+
+//vendors
+//@import 'vendors/';
+
+//layout
+@import 'modules/_grid';
+@import 'modules/_base';
+@import 'modules/_header';
+@import 'modules/_forms';
+
+//components
+@import 'modules/_navigation';
+
+//pages
+@import 'modules/_lists';

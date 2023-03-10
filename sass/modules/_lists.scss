@@ -1,0 +1,98 @@
+#content {
+	ul {
+
+			a {
+				padding: 0 0 10px 0;
+				text-decoration: none;
+
+				@media #{$tabletUp}{
+					padding: 0 10px 10px 0;
+
+					&:nth-of-type(2n){
+						padding: 0 0 10px 0;
+					}
+				}
+			}
+
+			li {
+				padding: 28px 18px 28px;
+				background-color: maroon;
+				color: $white;
+
+				&:hover {
+					background-color: $white;
+					color: maroon;
+				}
+			}
+	}
+}
+
+.form {
+	margin: 0 auto;
+	background-color: maroon;
+	width: 50%;
+	padding: 20px;
+	float: left;
+	margin: 20px;
+
+}
+
+.list {
+	float: right;
+	margin: 20px;
+}
+
+#label {
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+.list h2 {
+	margin-bottom: 20px;
+}
+
+#form {
+	margin: 40px;
+
+}
+
+.form button {
+	background-color: orange;
+}
+
+.form input {
+	padding: 10px;
+	margin: 10px;
+}
+
+.form button {
+	padding: 10px;
+	margin-left: 10px;
+}
+
+.detail {
+	padding: 60px;
+	display: inline;
+}
+
+.options {
+	right: 0;
+	margin-right: 40px;
+	margin-top: 10px;
+	position: absolute;
+	
+}
+
+#roles {
+	margin-bottom: 20px;
+	margin-left: 10px;
+	margin-top: 10px;
+	padding: 10px;
+	background-color: white;
+}
+
+.areabckrg {
+	background-color: maroon;
+	height: 150px;
+	padding: 40px;
+}
