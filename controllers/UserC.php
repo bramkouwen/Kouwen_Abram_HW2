@@ -58,7 +58,6 @@ public function loadViews() {
 			$users = $this->model->deleteUser($_GET['id']);
 			header("location:index.php");
 		}else if($_GET['task'] == 'update') {
-			
 			$id = $_GET['id'];
 			//POST values from a form, could also be hidden field for id value
 			$formvalues = [$_POST['last'],$_POST['first'],$_POST['usrn'],$_POST['pwd'],'user.png',$_GET['id']];

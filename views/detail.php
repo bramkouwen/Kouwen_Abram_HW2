@@ -6,7 +6,7 @@ echo
 			<div class="detail">
 				<div class="areabckrg">
 					<div class="col-12 med-col-2"><img id="Image" alt="Employee Photo" src="images/'.$users[0]->photo.'"></div>
-					<div id="Details" class="col-12 med-col-10"> <span class="centerDetails"><span class="label">Name:</span> '.$users[0]->lastname.', '.$users[0]->firstname.'<br>
+					<div id="Details" class="col-12 med-col-10"> <span class="centerDetails"><span class="label">Name:</span> '.$users[0]->lastname.' '.$users[0]->firstname.'<br>
 					
 					<span class="label">Attendee ID:</span> '.$users[0]->id.'<br>
 					<span class="label">Role:</span> '.$users[0]->rolename.'<br></span>
@@ -20,12 +20,12 @@ echo
 			<div>
 				<h2>Update User</h2>
 			</div>
-			<form action="includes/signup.php" method="POST" id="form">
+			<form action="index.php?task=update&id='.$users[0]->id.'" method="POST" id="form">
 				<div class="inputarea">
 					<input type="text" name="first" placeholder="Firstname">
 					<input type="text" name="last" placeholder="Lastname">
 					<br>
-					<input type="text" name="usrnm" placeholder="Username">
+					<input type="text" name="usrn" placeholder="Username">
 					<input type="password" name="pwd" placeholder="Password">
 					<br>
 					<label id="label" for="select">Role:</label>
